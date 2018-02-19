@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div style="text-align:center;">
+        <table>
+        <tr><td colspan="2">@Html.ActionLink("Home Page", "Index", "Home") </td></tr>
+        <tr><td colspan="2">@Html.ActionLink("Contact", "ContactInfo", "Home") </td></tr>
+        <tr><td colspan="2">@Html.ActionLink("Vendor", "Index", "Vendor") </td></tr>
+        <tr><td colspan="2">@Html.ActionLink("Vendor Edit", "EditVendor", "Vendor") </td></tr>
+            </table>
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

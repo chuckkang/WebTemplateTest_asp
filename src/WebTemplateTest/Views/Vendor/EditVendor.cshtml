@@ -1,0 +1,15 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model VendorModel
+@{
+    Layout = "~/Views/Vendor/_VendorLayout.cshtml";
+    ViewBag.Title = "Vendor Edit Page";
+}
+<div style="align-content:center;">@ViewBag.Title</div>
+<table align="center" border="1">
+
+    <tr><th> Contact</th><th> <input type="text" value="@Model.Name"/></th></tr>
+    <tr><th>Edit User </th><th><input type="text"  value="@Model.Address"/></th></tr>
+
+</table>
